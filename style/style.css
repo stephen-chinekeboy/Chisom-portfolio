@@ -209,6 +209,25 @@ a button{
 
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  .sec {
+    background-position: left;
+    /* background-size: contain; */
+    height: 110vh;
+    width: 100%;
+  }
+
+  body {
+    background-color: none;
+  }
+
+  .hero-heading h1 , p {
+    font-size: 35px;
+    width: 300px;
+    line-height: 50px;
+  }
+}
+
 @media (max-width: 900px) {
  .hamburger {
   display: block;
