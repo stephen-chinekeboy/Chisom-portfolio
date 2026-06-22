@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
 }
 
 body {
@@ -223,7 +222,7 @@ a button{
 
   .hero-heading h1 , p {
     font-size: 35px;
-    width: 300px;
+    width: 350px;
     line-height: 50px;
   }
 }
