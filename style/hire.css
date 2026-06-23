@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #0d1117;
+  background-color: black;
 }
 
 .hire {
@@ -80,6 +80,102 @@ body {
   border: 3px solid black;
   color: white;
 }
+/* services section */
+.services {
+  padding: 40px 6%;
+  color: white;
+}
+
+.service-text {
+  text-align: center;
+}
+
+.service-text p {
+  color: #4f46ff;
+  font-size: 18px;
+  font-family: 'Inter' , sans-serif;
+}
+
+.service-text h2 {
+  font-family: 'Sora' , sans-serif;
+  text-transform: capitalize;
+  font-size: 35px;
+  padding-top: 10px;
+}
+
+.service-grid svg {
+  fill: #7b3cff;
+  width: 60px;
+  height: 60px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+  gap: 40px;
+}
+
+.logo-flex,
+.brand-flex,
+.poster-flex,
+.design-flex  {
+  text-align: center;
+  background-color: #0d1117;
+  padding: 20px 10px;
+  line-height: 40px;
+  margin-top: 25px;
+}
+
+.logo-flex h3,
+.brand-flex h3,
+.poster-flex h3,
+.design-flex h3 {
+  font-size: 25px;
+  font-family: 'Sora' , sans-serif;
+  text-transform: capitalize;
+}
+
+.logo-text .logos ,
+.brand-text .brands,
+.poster-text .posters,
+.design-text .designs{
+  font-size: 15px;
+  font-family: 'Inter' , sans-serif;
+  color: #ddd;
+  line-height: 30px;
+}
+
+.brand-line,
+.logo-line,
+.poster-line,
+.packaging-line {
+  margin: 20px 70px;
+  text-align: center;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #7b3cff;
+}
+
+.logo-text p,
+.brand-text p,
+.poster-text p,
+.design-text p {
+  color: #ddd;
+  font-size: 15px;
+  font-family: 'Inter' , sans-serif;
+}
+
+.logo-text p span,
+.brand-text p span,
+.poster-text p span,
+.design-text p span {
+  color: white;
+  font-size: 17px;
+  font-family: 'Sora' , sans-serif;
+}
 
 @media(max-width: 480px) {
   .hire {
@@ -102,4 +198,17 @@ body {
   .hero-button {
     flex-direction: column;
   }
+  /* services section */
+
+  .service-text p {
+    font-size: 15px;
+  }
+
+  .service-text h2 {
+    font-size: 25px;
+  }
+}
+
+@media(min-width: 481px) and (max-width: 768px) {
+
 }
