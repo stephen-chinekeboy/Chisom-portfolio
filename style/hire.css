@@ -176,6 +176,75 @@ body {
   font-size: 17px;
   font-family: 'Sora' , sans-serif;
 }
+/* work section */
+.work {
+  padding: 40px 2%;
+}
+
+.work-head {
+  text-align: center;
+}
+
+.work-head p {
+  font-size: 18px;
+  color: #7b3cff;
+  font-family: 'Inter' , sans-serif;
+}
+
+.work-head h2 {
+  color: white;
+  text-transform: capitalize;
+  font-family: 'Sora' , sans-serif;
+  padding-top: 10px;
+  font-size: 35px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.fast-flex,
+.quality-flex,
+.clear-flex,
+.unlimited-flex {
+  display: flex;
+  gap: 15px;
+  color: white;
+}
+
+.work-grid svg {
+  background-color: #0d1117;
+  padding: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  fill: #7b3cff;
+}
+
+.fast-flex p,
+.quality-flex p,
+.clear-flex p,
+.unlimited-flex p {
+  color: #ddd;
+  font-family: 'Inter' , sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.fast-flex h3,
+.quality-flex h3,
+.clear-flex h3,
+.unlimited-flex h3 {
+  font-size: 20px;
+  font-family: 'Sora' , sans-serif;
+}
+
+
+
+
 
 @media(max-width: 480px) {
   .hire {
@@ -207,8 +276,23 @@ body {
   .service-text h2 {
     font-size: 25px;
   }
+  /* work section */
+  .work-head h2 {
+    font-size: 25px;
+  }
+  .work-head p {
+    font-size: 15px;
+  }
 }
 
 @media(min-width: 481px) and (max-width: 768px) {
+  .hire {
+    background-position: right;
+    background-size: contain;
+  }
 
+  .hire h1 {
+    font-size: 40px;
+    width: 500px;
+  }
 }

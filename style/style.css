@@ -7,6 +7,7 @@
 body {
   background-color: #0d1117;
 }
+
 header {
   font-family: 'Sora' , sans-serif;
   padding: 20px;
@@ -78,7 +79,7 @@ a button{
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: start;
   text-align: start;
@@ -179,7 +180,70 @@ a button{
   color: black;
   border: none;
 }
+/* project section */
 
+.project {
+  padding: 100px 10%;
+}
+
+.project-head {
+  text-align: center;
+}
+
+.project-head p {
+  color: #7b3cff;
+  font-size: 18px;
+  font-family: 'Inter' , sans-serif;
+}
+
+.project-head h2 {
+  font-size: 35px;
+  color: white;
+  font-family: 'Sora' , sans-serif;
+  text-transform: capitalize;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.project-img {
+  padding-bottom: 70px;
+}
+
+.project-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-text h3{
+  font-size: 20px;
+  color: white;
+  font-family: 'Sora', sans-serif;
+}
+
+.project-text p {
+  color: #ddd;
+  font-family: 'Inter' , sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.all {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.all button {
+  padding: 15px 35px;
+  font-size: 18px;
+  color: white;
+  border: 1px solid #ddd; 
+  background: none;
+}
 
 
 @media (max-width: 480px) {
@@ -223,19 +287,36 @@ a button{
   .view button {
     padding: 10px 20px;
   }
+  /* project section*/
+  .project-head p {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+
+  .project-head h2 {
+    font-size: 30px;
+  }
+
+  .project-grid {
+    gap: 10px;
+  }
+
+  .all {
+    padding-top: 25px;
+  }
 
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   .sec {
-    background-position: left;
+    background-position: right;
     /* background-size: contain; */
     height: 110vh;
     width: 100%;
   }
 
   body {
-    background-color: none;
+    /* background-color: none; */
   }
 
   .hero-heading h1 , p {
@@ -243,9 +324,47 @@ a button{
     width: 350px;
     line-height: 50px;
   }
+  /* project */
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px 1fr));
+    gap: 5px;
+  }
+
+  .project-head p{
+    text-align: center;
+    padding: 0;
+  }
+
+  .project-head h2 {
+    font-size: 34px;
+  }
+
+  .project-text {
+    line-height: 10px;
+  }
+
+  .project-text p {
+    padding-top: 0px;
+  }
+
+  .all {
+    padding-top: 20px;
+  }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .all {
+    padding-top: 20px;
+  }
+
+  .all button {
+    border: 1px solid #ddd;
+  }
+}
+
+@media (max-width: 1000px) {
  .hamburger {
   display: block;
  }
