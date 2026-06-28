@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #0d1117;
+  background-color: black;
 }
 
 header {
@@ -105,6 +105,7 @@ a button{
   -webkit-text-fill-color: transparent;
   font-size: 20px;
   font-family: 'Inter' , sans-serif;
+  padding-bottom: 15px;
 }
 
 .hero-heading .daniel {
@@ -122,7 +123,7 @@ a button{
   font-family: 'Sora' , sans-serif;
 }
 
-.hero-heading p {
+.hero-heading .life {
   font-size: 20px;
   background: linear-gradient(90deg, #4f46ff 0%, #7b3cff 50%, #ff3ea5 100%);
   -webkit-background-clip: text;
@@ -136,7 +137,7 @@ a button{
   padding: 20px 0;
 }
 
-.hero-text p {
+.hero-text .help {
   font-size: 18px;
   color: #ddd;
   font-family: 'Inter' , sans-serif;
@@ -206,7 +207,7 @@ a button{
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  column-gap: 30px;
 }
 
 .project-img {
@@ -244,6 +245,70 @@ a button{
   border: 1px solid #ddd; 
   background: none;
 }
+/* services section */
+.service {
+  padding: 10px 8%;
+}
+
+.service svg {
+  width: 80px;
+  height: 80px;
+  fill: #7b3cff;
+}
+
+.service-head {
+  text-align: center;
+}
+
+.service-head p {
+  color: #7b3cff;
+  font-size: 18px;
+  font-family: 'Inter' , sans-serif;
+  padding-bottom: 10px;
+}
+
+.service-head h2 {
+  font-family: 'Sora' , sans-serif;
+  color: white;
+  font-size: 35px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px ,1fr));
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.brand-flex,
+.package-flex,
+.print-flex,
+.logo-flex {
+  background-color: #0d1117;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.brand-text h3,
+.print-text h3,
+.package-text h3,
+.logo-text h3{
+  font-size: 25px;
+  font-family: 'Sora' , sans-serif;
+  text-transform: capitalize;
+  color: white;
+  padding: 10px 0;
+}
+
+.brand-text p,
+.print-text p,
+.package-text p,
+.logo-text p {
+  font-size: 15px;
+  color: #ddd;
+  font-family: 'Inter' , sans-serif;
+  line-height: 28px;
+}
 
 
 @media (max-width: 480px) {
@@ -268,11 +333,11 @@ a button{
     font-size: 25px;
     width: 250px;
     line-height: 40px;
-  }.hero-heading p {
+  }.hero-heading .life {
     font-size: 30px;
   }
 
-  .hero-text p {
+  .hero-text .help {
     width: 200px;
   }
 
@@ -310,19 +375,18 @@ a button{
 @media (min-width: 481px) and (max-width: 768px) {
   .sec {
     background-position: right;
-    /* background-size: contain; */
     height: 110vh;
     width: 100%;
   }
 
-  body {
-    /* background-color: none; */
-  }
-
-  .hero-heading h1 , p {
+  .hero-heading h1 {
     font-size: 35px;
     width: 350px;
     line-height: 50px;
+  }
+
+  .hero-heading .first {
+    padding-bottom: 15px;
   }
   /* project */
 
@@ -330,11 +394,6 @@ a button{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px 1fr));
     gap: 5px;
-  }
-
-  .project-head p{
-    text-align: center;
-    padding: 0;
   }
 
   .project-head h2 {
@@ -346,7 +405,7 @@ a button{
   }
 
   .project-text p {
-    padding-top: 0px;
+    padding-top: 20px;
   }
 
   .all {
