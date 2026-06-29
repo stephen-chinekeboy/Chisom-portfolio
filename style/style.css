@@ -459,6 +459,7 @@ a button{
   .all {
     padding-top: 25px;
   }
+  /* about section */
 
   .about-flex {
     flex-direction: column;
@@ -488,7 +489,6 @@ a button{
   .experience {
     flex-direction: column;
   }
-
   .experience-line {
     text-align: center;
     width: 100%;
@@ -534,6 +534,10 @@ a button{
 
   .all {
     padding-top: 20px;
+  }
+  /* about section */
+  .about-head h2 {
+    padding-top: 5px;
   }
 }
 
