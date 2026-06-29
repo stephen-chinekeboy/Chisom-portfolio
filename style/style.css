@@ -464,13 +464,17 @@ a button{
     flex-direction: column;
   }
 
+  .about-text {
+
+  }
+
   .about-head p {
     font-size: 15px;
   }
 
   .about-head h2{
     font-size: 30px;
-    width: 400px;
+    width: 350px;
   }
 
   .about-text :first-child {
