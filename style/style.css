@@ -400,6 +400,73 @@ a button{
   font-family: 'Inter' , sans-serif;
   color: #dddddda2;
 }
+/* get in-touch section */
+.get {
+  padding: 40px 5%;
+}
+
+.get-head {
+  text-align: center;
+}
+
+.get-head p {
+  color: #7b3cff;
+  font-size: 15px;
+  font-family: 'Inter' , sans-serif;
+}
+
+.get-head h2 {
+  font-size: 35px;
+  color: white;
+  font-family: 'Sora' , sans-serif;
+  padding-top: 5px;
+}
+
+.get-flex {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.contact-svg,
+.contact-form {
+  flex: 1;
+}
+
+.contact-svg svg {
+  width: 40px;
+  height: 40px;
+  fill: #ddd;
+}
+
+.message,
+.phone,
+.location{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone-svg {
+  padding: 10px 0;
+}
+
+.message p,
+.phone p,
+.location p {
+  font-size: 15px;
+  font-family: 'Inter' , sans-serif;
+  color: #ddd;
+  line-height: 30px;
+}
+
+.location p {
+  width: 250px;
+}
+
+.contact-svg p{
+  color: #ddd;
+}
 
 @media (max-width: 480px) {
   .logo h1 {
@@ -418,13 +485,16 @@ a button{
   }
 
   .hero-heading .first {
-    font-size: 15px;
+    font-size: 19px;
+    padding-bottom: 5px;
   }.hero-heading h1 {
-    font-size: 25px;
-    width: 250px;
+    font-size: 30px;
+    width: 300px;
     line-height: 40px;
   }.hero-heading .life {
     font-size: 30px;
+  }.hero-heading .daniel {
+    font-size: 22px;
   }
 
   .hero-text .help {
@@ -536,6 +606,10 @@ a button{
     padding-top: 20px;
   }
   /* about section */
+  .about-flex {
+    flex-direction: column;
+  }
+
   .about-head h2 {
     padding-top: 5px;
   }
