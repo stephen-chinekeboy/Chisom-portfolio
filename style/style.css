@@ -184,7 +184,7 @@ a button{
 /* project section */
 
 .project {
-  padding: 100px 10%;
+  padding: 70px 10%;
 }
 
 .project-head {
@@ -247,7 +247,7 @@ a button{
 }
 /* services section */
 .service {
-  padding: 10px 8%;
+  padding: 100px 10%;
 }
 
 .service svg {
@@ -312,7 +312,7 @@ a button{
 /* about section */
 
 .about {
-  padding: 50px 3%;
+  padding: 10px 10%;
   color: white;
 }
 
@@ -425,7 +425,7 @@ a button{
 .get-flex {
   display: flex;
   gap: 30px;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .contact-svg,
@@ -485,8 +485,7 @@ a button{
   }
 
   .hero-heading .first {
-    font-size: 19px;
-    padding-bottom: 5px;
+    font-size: 17px;
   }.hero-heading h1 {
     font-size: 30px;
     width: 300px;
@@ -494,7 +493,7 @@ a button{
   }.hero-heading .life {
     font-size: 30px;
   }.hero-heading .daniel {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .hero-text .help {
