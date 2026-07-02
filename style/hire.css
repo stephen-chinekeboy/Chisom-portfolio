@@ -315,6 +315,151 @@ body {
   color: #ddd;
   font-family: 'Inter' , sans-serif;
 }
+/* contact section */
+
+.contact-section {
+  padding: 30px 4%;
+}
+
+.contact-text,
+.contact-form {
+  flex: 1;
+}
+
+.contact-start .let{
+  font-size: 17px;
+  color: #7b3cff;
+  font-family: 'Inter' , sans-serif;
+}
+
+.contact-start h2 {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'Sora' , sans-serif;
+  padding: 5px 0;
+}
+
+.contact-start p {
+  font-size: 15px;
+  color: #dddddd;
+  font-family: 'Inter' , sans-serif;
+  width: 350px;
+  line-height: 25px;
+}
+
+.contact-flex {
+ display: flex; 
+ gap: 40px;
+}
+
+.contact {
+  padding-top: 20px;
+}
+
+.contact svg {
+  width: 40px;
+  height: 40px;
+  fill: #7b3cff;
+}
+
+.mail,
+.phone,
+.location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact p {
+  font-size: 15px;
+  color: #ddd;
+  font-family: 'Inter' , sans-serif;
+}
+
+.input-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.input-1 input {
+  width: 100%;
+  padding: 20px 25px;
+  background: none;
+  border: 1px solid #ddddddb9;
+  color: #fff;
+}
+
+.input-1 select {
+  width: 100%;
+  padding: 20px 25px;
+  background: none;
+  border: 1px solid #ddddddb9;
+  color: white;
+}
+
+.input-1 select option {
+  color: black;
+}
+
+.input-1 input::placeholder {
+  font-size: 16px;
+  color: #fff;
+}
+
+.select {
+  padding-top: 10px;
+}
+
+.select select {
+  width: 100%;
+  padding: 20px 25px;
+  font-size: 16px;
+  background: none;
+  color: #fff;
+}
+
+.select select option {
+  color: black;
+}
+
+.message {
+  padding-top: 10px;
+}
+
+.message textarea {
+  width: 100%;
+  background: none;
+  padding: 30px 35px;
+  color: white;
+}
+
+.message textarea::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+.send {
+  padding-top: 10px;
+}
+
+.send button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  padding: 15px 20px;
+  color: white;
+   background: linear-gradient(90deg, #4f46ff 0%, #7b3cff 50%, #ff3ea5 100%);
+   border: none;
+   border-radius: 10px;
+}
+
+.send button svg {
+  fill: #fff;
+}
 
 
 @media(max-width: 480px) {
@@ -379,6 +524,34 @@ body {
   .delivery {
     text-align: center;
   }
+  /* contact section */
+  .contact-flex {
+    flex-direction: column;
+  }
+
+  .contact-start .let{
+    font-size: 15px;
+  }
+
+  .contact-start h2 {
+    font-size: 30px;
+  }
+
+  .contact-start p {
+    width: 300px;
+  }
+
+  .phone {
+    padding: 10px 0;
+  }
+
+  .location p {
+    line-height: 25px;
+  }
+
+  .send button {
+    font-size: 20px;
+  }
 }
 
 @media(min-width: 481px) and (max-width: 768px) {
@@ -390,5 +563,37 @@ body {
   .hire h1 {
     font-size: 40px;
     width: 500px;
+  }
+  /* process section */
+  .process-flex {
+    flex-direction: column;
+  }
+
+  .discovery,
+  .design,
+  .concept,
+  .revision,
+  .delivery {
+    text-align: center;
+  }
+
+  .process-line {
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+  /* contact section */
+  .contact-flex {
+    flex-direction: column;
+  }
+
+  .phone {
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hire {
+    background-position: right;
+    background-size: contain;
   }
 }
