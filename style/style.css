@@ -9,6 +9,7 @@ body {
 }
 
 header {
+  background-color: #0d1117;
   font-family: 'Sora' , sans-serif;
   padding: 20px;
   left: 0;
@@ -79,11 +80,11 @@ a button{
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: start;
   text-align: start;
-  padding-top: 70px;
+  padding-top: 80px;
   position: relative;
 }
 
@@ -205,19 +206,22 @@ a button{
 }
 
 .project-grid {
+  padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   column-gap: 30px;
 }
 
-.project-img {
+.project-img,
+.project-img-2 {
   padding-bottom: 70px;
 }
 
-.project-img img{
+.project-img img,
+.project-img-2 img{
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .project-text h3{
@@ -244,6 +248,13 @@ a button{
   color: white;
   border: 1px solid #ddd; 
   background: none;
+  transform: 0.5s;
+}
+
+.all button:hover {
+  background: linear-gradient(90deg, #4f46ff 0%, #7b3cff 50%, #ff3ea5 100%);
+  border: none;
+  transform: 0.5s;
 }
 /* services section */
 .service {
@@ -550,6 +561,17 @@ button svg {
   fill: white;
 }
 
+footer {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+footer p {
+  color: #ddddddd5;
+  font-size: 18px;
+  font-family: 'Sora' , sans-serif;
+}
+
 @media (max-width: 480px) {
   .logo h1 {
     font-size: 20px;
@@ -558,8 +580,9 @@ button svg {
   .sec {
     background-size: cover;
     background-position: center;
-    /* width: 100%; */
+    width: 100%;
     height: 100vh;
+    
   }
 
   .hero {
@@ -605,6 +628,17 @@ button svg {
 
   .project-grid {
     gap: 10px;
+  }
+
+  .project-text {
+    padding-bottom: 5px;
+  }
+
+  .project-img img,
+  .project-img-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .all {
@@ -680,12 +714,22 @@ button svg {
   }
 
   .project-text {
+    padding: 10px 0;
+  }
+
+  .project-text {
     line-height: 10px;
   }
 
   .project-text p {
     padding-top: 20px;
   }
+
+  .project-img-2 {
+    padding-top: 35px;
+    padding-bottom: 100px;
+  }
+
 
   .all {
     padding-top: 20px;

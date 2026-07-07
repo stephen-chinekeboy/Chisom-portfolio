@@ -188,7 +188,6 @@
       </div>
     </section>
 
-
     <section class="project">
       <div class="project-head">
         <p>Featured Work</p>
@@ -197,40 +196,42 @@
       
       <div class="project-grid">
         <div class="project-img">
-          <img src="/images/WhatsApp Image 2026-05-28 at 1.09.50 PM.jpeg" alt="" loading="lazy">
+          <img src="/brand-img/eb7b2754-4605-4c84-a5c2-ebed32ed30f8.jpg" alt="" loading="lazy">
           <div class="project-text">
-            <h3>Monarch Coffee Branding</h3>
+            <h3>Rozzy Wears</h3>
             <p>Brand Identity</p>
           </div>
         </div>
 
-        <div class="project-img">
-          <img src="/images/WhatsApp Image 2026-05-28 at 1.09.50 PM.jpeg" alt="" loading="lazy">
+        <div class="project-img-2">
+          <img src="/print-img/WhatsApp Image 2026-07-05 at 2.33.03 PM.jpeg" alt="" loading="lazy">
           <div class="project-text">
-            <h3>Gym Poster Design</h3>
+            <h3>Royals Company Limited</h3>
             <p>Poster/Print</p>
           </div>
         </div>
 
-        <div class="project-img">
+        <!-- <div class="project-img">
           <img src="/images/WhatsApp Image 2026-05-28 at 1.09.50 PM.jpeg" alt="" loading="lazy">
           <div class="project-text">
             <h3>Social Media Post</h3>
             <p>Social Media Design</p>
           </div>
-        </div>
+        </div> -->
 
         <div class="project-img">
-          <img src="/images/WhatsApp Image 2026-05-28 at 1.09.50 PM.jpeg" alt="" loading="lazy">
+          <img src="/logo-img/fd7cf02d-7aac-4b7b-b3cf-40fdb71e981e.jpg" alt="" loading="lazy">
           <div class="project-text">
-            <h3>Aurora Boutique Logo</h3>
+            <h3 class="touch">Midas Touch Logo</h3>
             <p>Logo Design</p>
           </div>
         </div>
       </div>
 
       <div class="all">
-        <button>View All Projects</button>
+        <button onclick="
+          window.location.href='/html/project.html'
+          ">View All Projects</button>
       </div>
     </section>
 
@@ -274,7 +275,7 @@
       </div>
     </section>
 
-     <section class="get">
+    <section class="get">
       <div class="get-head">
         <p>LET'S WORK TOGETHER</p>
         <h2>Get In Touch</h2>
@@ -317,7 +318,9 @@
         </div>
 
         <div class="contact-form">
-          <form action="">
+          <form action="https://api.web3forms.com/submit" method="post">
+            <input type="hidden" name="access_key" value="df691e2b-3824-4045-9c82-138b70b6c584">
+            <input type="hidden" name="redirect" value="https://DedaveGraphics.vercel.app/html/thank-you.html">
             <div class="forms">
               <div class="input-1">
                 <div class="input">
@@ -333,7 +336,7 @@
               </div>
 
               <div class="message-input">
-                <textarea placeholder="Your Message"></textarea>
+                <textarea placeholder="Your Message" required></textarea>
               </div>
 
               <div class="send">
@@ -346,6 +349,10 @@
       </div>
     </section> 
   </main>
+
+  <footer>
+    <p class="copy-button">&copy; 2026 DedaveGraphics. All rights reserved.</p>
+  </footer>
   
 
   <script src="/script.js"></script>
